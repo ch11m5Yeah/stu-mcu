@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 23 14:53:37 2024
+# Process ID: 32704
+# Current directory: D:/homework_space/FPGA/CPU8bit/cpu/cpu.sim/sim_1/behav/xsim
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13260 D:\homework_space\FPGA\CPU8bit\cpu\cpu.sim\sim_1\behav\xsim\reg2alu_behav.wdb
+# Log file: D:/homework_space/FPGA/CPU8bit/cpu/cpu.sim/sim_1/behav/xsim/vivado.log
+# Journal file: D:/homework_space/FPGA/CPU8bit/cpu/cpu.sim/sim_1/behav/xsim\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Xilinx/Vivado/2018.3/scripts/Vivado_init.tcl'
+start_gui
+open_wave_database {D:\homework_space\FPGA\CPU8bit\cpu\cpu.sim\sim_1\behav\xsim\reg2alu_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_wave_database: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 685.082 ; gain = 62.754
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 23 14:59:48 2024...

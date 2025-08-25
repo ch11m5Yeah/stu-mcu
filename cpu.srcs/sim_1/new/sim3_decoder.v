@@ -1,0 +1,11 @@
+module sim3_decoder;
+reg sys_clk;
+reg sys_rstn;
+wire [7:0]  Instruction;
+wire [7:0]  data_wire;
+wire alu_en,queue_read,reg_8x8_en;
+wire [2:0]  reg_select;
+wire reg_8x8_rstn,alu_rstn,queue_rstn;
+wire reg_write,reg_read;
+wire alu_in0,alu_in1;
+endmodule;

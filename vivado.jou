@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 26 18:10:10 2024
+# Process ID: 17532
+# Current directory: D:/homework_space/FPGA/CPU8bit/cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23660 D:\homework_space\FPGA\CPU8bit\cpu\cpu.xpr
+# Log file: D:/homework_space/FPGA/CPU8bit/cpu/vivado.log
+# Journal file: D:/homework_space/FPGA/CPU8bit/cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/homework_space/FPGA/CPU8bit/cpu/cpu.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+launch_simulation
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property OUTPUT_VALUE 1 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+close_hw
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+close_sim
+launch_simulation
+source sim_decoder.tcl
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/homework_space/FPGA/CPU8bit/cpu/cpu.runs/impl_1/test.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property OUTPUT_VALUE 00 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 60 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 80 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 00 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 80 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 80 [get_hw_probes rom_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {rom_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes reg_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {reg_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+set_property OUTPUT_VALUE 00 [get_hw_probes ram_test_addr_wire -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+commit_hw_vio [get_hw_probes {ram_test_addr_wire} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"m2"}]]
+close_sim
